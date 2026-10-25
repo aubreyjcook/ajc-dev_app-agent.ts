@@ -1,0 +1,4 @@
+# pnpm settings for this package (pnpm >= 10 reads settings from here, not package.json).
+# esbuild (pulled in by Vitest) has a postinstall script; approve it so `pnpm test` runs.
+allowBuilds:
+  esbuild: true

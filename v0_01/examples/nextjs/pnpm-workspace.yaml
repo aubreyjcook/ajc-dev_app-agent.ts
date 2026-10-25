@@ -1,0 +1,6 @@
+# Makes this example its own pnpm "root" so it installs independently of the
+# library one level up (which has its own pnpm-workspace.yaml for settings).
+# Also approves the native build scripts Next.js may pull in.
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

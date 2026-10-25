@@ -1,0 +1,10 @@
+{
+  // Build-only config: compiles `src/` into `dist/` and excludes tests.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["tests", "**/*.test.ts"]
+}

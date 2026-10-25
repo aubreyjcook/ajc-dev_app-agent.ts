@@ -1,0 +1,41 @@
+{
+  // Base TypeScript config. Used for type-checking and by Vitest.
+  // `tsconfig.build.json` extends this and only compiles `src/` to `dist/`.
+  "compilerOptions": {
+    // Emit modern JavaScript. Node 18+ and every modern bundler understand ES2022.
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+
+    // Native ES modules with Node's resolution rules. This is why imports in
+    // `src/` end in `.js` even though the files are `.ts`: TypeScript does not
+    // rewrite specifiers, so we write what the *emitted* JavaScript needs.
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // Strictness. All of these catch real bugs; keep them on.
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Interop / ergonomics.
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    // Output settings. `rootDir` lives in tsconfig.build.json because this
+    // config also includes `tests/`, which sit outside `src/`.
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "noEmit": true,
+
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "vitest.config.ts"]
+}
