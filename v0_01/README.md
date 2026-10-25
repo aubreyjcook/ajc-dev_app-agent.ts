@@ -129,7 +129,11 @@ See `tests/` for more.
 ## Documentation map
 
 - **`docs/ARCHITECTURE.md`** — how the code works, file by file, written for someone learning TypeScript / agents.
-- **`docs/NEXTJS.md`** — integrating into Next.js (App Router), both history patterns, runtime notes.
+- **`docs/NEXTJS.md`** — integrating into Next.js: add-to-existing-app checklist, App Router and
+  Pages Router handlers, both history patterns, runtime notes, production checklist (auth, rate
+  limiting, input sanitising, tool hardening, CORS), deployment notes.
+- **`docs/INTEGRATION.md`** — every other host: Express, Hono, SvelteKit, Remix, Nuxt, a plain HTML
+  widget, and CLI/background use.
 - **`examples/nextjs/`** — a runnable Next.js app.
 - **`CHANGELOG.md`** — what this version contains and why.
 - **`ROADMAP.md`** — what v0_02 should add.
@@ -150,7 +154,7 @@ v0_01/
 │       └── mock.ts               scripted fake for tests
 ├── tests/                        Vitest suites
 ├── examples/nextjs/              runnable demo app
-├── docs/                         ARCHITECTURE.md, NEXTJS.md
+├── docs/                         ARCHITECTURE.md, NEXTJS.md, INTEGRATION.md
 ├── CHANGELOG.md · ROADMAP.md
 └── package.json · tsconfig*.json · vitest.config.ts · pnpm-workspace.yaml
 ```

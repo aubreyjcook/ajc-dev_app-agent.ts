@@ -54,6 +54,13 @@ way*, for someone using the version to learn.
 ### Documentation
 - `README.md` (usage), `docs/ARCHITECTURE.md` (code walkthrough for learners),
   `docs/NEXTJS.md` (integration guide), this changelog, and `ROADMAP.md`.
+- `docs/NEXTJS.md` expanded (same version): "add to an existing app" checklist, Pages Router API
+  route, production checklist (authentication, rate limiting, input/history sanitising with a
+  type-checked `sanitizeHistory` example, tool hardening, cost bounds, error mapping, CORS,
+  observability, secrets), and deployment notes for Vercel, self-hosted Node, Netlify/Cloudflare.
+- `docs/INTEGRATION.md` added: the same endpoint pattern for Express, Hono, SvelteKit,
+  Remix/React Router, Nuxt, a dependency-free HTML/JS widget, and CLI/background usage, plus a
+  host-agnostic production checklist.
 
 ## Known limitations
 
